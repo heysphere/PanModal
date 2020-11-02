@@ -451,12 +451,6 @@ private extension PanModalPresentationController {
         scrollView.scrollIndicatorInsets = presentable?.scrollIndicatorInsets ?? .zero
 
         /**
-         Set the appropriate contentInset as the configuration within this class
-         offsets it
-         */
-        scrollView.contentInset.bottom = presentingViewController.bottomLayoutGuide.length
-
-        /**
          As we adjust the bounds during `handleScrollViewTopBounce`
          we should assume that contentInsetAdjustmentBehavior will not be correct
          */
